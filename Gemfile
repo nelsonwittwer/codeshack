@@ -8,6 +8,7 @@ gem "middleman-syntax"
 gem 'middleman-gh-pages'
 gem "redcarpet"
 gem "rouge"
+gem "pry"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
