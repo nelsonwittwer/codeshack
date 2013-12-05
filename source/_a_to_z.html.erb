@@ -1,0 +1,12 @@
+<div class="a_z_nav">
+  <h3>Articles</h3>
+  <ul>
+    <% ('A'..'Z').each do |letter| %>
+      <% page_articles.select { |article| article.title[0] == letter }.each do |article| %>
+        <% if article.title[0] == letter %>
+          <li><%= link_to article.title, article %></li>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
